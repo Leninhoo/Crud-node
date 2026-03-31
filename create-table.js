@@ -1,8 +1,6 @@
-import { sql } from './db.js';
+import { sql } from "./db.js";
 
-
-
-sql `
+sql`
     CREATE TABLE Items (
     id TEXT PRIMARY KEY,
     title TEXT,
@@ -10,5 +8,5 @@ sql `
     duration INTEGER
     );
 `.then(() => {
-    console.log("tabela criada!")
-})
+  console.log("tabela criada!");
+});
